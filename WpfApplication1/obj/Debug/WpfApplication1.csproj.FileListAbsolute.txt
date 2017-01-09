@@ -1,0 +1,16 @@
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\kayit.baml
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\kayit.g.cs
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\giris.baml
+C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\giris.g.cs
