@@ -22,7 +22,7 @@ namespace WpfApplication1
     /// </summary>
     public partial class kayit : Page
     {
-        MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=uyekaydi;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
+        MySqlConnection baglanti = new MySqlConnection("Server = localhost; Database = uyekaydi; Uid =root; Pwd=;");
         
         
         
@@ -37,7 +37,7 @@ namespace WpfApplication1
         {
             
             baglanti.Open();
-            MySqlCommand uyekaydi = new MySqlCommand("INSERT INTO uyekaydi(ad,soyad,nick,sifre) values('" + txt1.Text + "','" + txt2.Text + "','" + txt3.Text + "','" + Convert.ToString(txt4.Password) + ")", baglanti);
+            MySqlCommand uyekaydi = new MySqlCommand("INSERT INTO uyekaydi(ad,soyad,nick,sifre) values('" + txt1.Text + "','" + txt2.Text + "','" + txt3.Text + "','" + Convert.ToString(txt4.Password) + "')", baglanti);
             uyekaydi.ExecuteNonQuery();
             uyekaydi.Dispose();
             baglanti.Close();
