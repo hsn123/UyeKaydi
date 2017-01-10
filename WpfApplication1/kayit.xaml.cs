@@ -22,9 +22,10 @@ namespace WpfApplication1
     /// </summary>
     public partial class kayit : Page
     {
-        VeriTabani veri = new VeriTabani("192.168.1.1", "3306", "Hasan", "hsn", "uyekaydi");
+        MySqlConnection baglanti = new MySqlConnection("Server=localhost;Port=3306;Database=uyekaydi;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
         
-         MySqlConnection baglanti;
+        
+        
 
         public MainWindow anaEkran;
         public kayit()
@@ -34,12 +35,14 @@ namespace WpfApplication1
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/giris.xaml", UriKind.Relative));
-            // veri.kullaniciekle(txt1.Text,txt2.Text,txt3.Text,txt4.Text);
-           // MySqlCommand komut = new MySqlCommand("INSERT INTO uyekaydi (ad,soyad,nick,sifre) VALUES ('" + txt1.Text + "','" + txt2.Text + "','" + txt3.Text + "','" + txt4.Text + "')",baglanti );
-            //komut.ExecuteNonQuery();
-           // komut.Dispose();
             
+            baglanti.Open();
+            MySqlCommand uyekaydi = new MySqlCommand("INSERT INTO uyekaydi(ad,soyad,nick,sifre) values('" + txt1.Text + "','" + txt2.Text + "','" + txt3.Text + "','" + Convert.ToString(txt4.Password) + ")", baglanti);
+            uyekaydi.ExecuteNonQuery();
+            uyekaydi.Dispose();
+            baglanti.Close();
+            MessageBox.Show("üye kaydı yapıldı");
+
         }
 
         private void btn1_Click(object sender, RoutedEventArgs e)

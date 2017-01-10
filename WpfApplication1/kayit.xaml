@@ -30,6 +30,6 @@
         <TextBox Name="txt1" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Margin="10"></TextBox>
         <TextBox Name="txt2" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="10"></TextBox>
         <TextBox Name="txt3" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Margin="10"></TextBox>
-        <TextBox Name="txt4" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Margin="10"></TextBox>
+        <PasswordBox Name="txt4" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Margin="10"></PasswordBox>
     </Grid>
 </Page>
