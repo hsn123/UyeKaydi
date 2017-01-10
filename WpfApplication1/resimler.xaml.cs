@@ -20,12 +20,29 @@ namespace WpfApplication1
     /// </summary>
     public partial class resimler : Page
     {
+        
        
 
         public resimler()
         {
             InitializeComponent();
+            
+        }
 
+        private void kaydet_Click(object sender, RoutedEventArgs e)
+        {
+            string[] isimler;
+
+            isimler = bilgi.Text.Split();
+
+            for (int i = 0; i < isimler.Length; i++)
+
+            {
+
+                lst1.Items.Add(isimler[i]);
+
+            }
+           
         }
     }
 }

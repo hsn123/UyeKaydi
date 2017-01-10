@@ -4,5 +4,7 @@
         Title="MainWindow" Height="350" Width="525" Background="Bisque">
     <Grid>
         <Frame Name="ekran"></Frame>
+        
+        
     </Grid>
 </Window>
