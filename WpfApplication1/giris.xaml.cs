@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data.OleDb;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace WpfApplication1
 {
@@ -25,10 +28,35 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+     
+       
 
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/resimler.xaml", UriKind.Relative));
+            string ad = txt5.Text;
+            string sifre = txt6.Password;
+            MySqlConnection bag = new MySqlConnection("Server = localhost; Database = uyekaydi; Uid = root; Pwd=;");
+            bag.Open();
+           
+            MySqlCommand girisyap = new MySqlCommand("SELECT * FROM uyekaydi where nick='" + txt5.Text + " 'and sifre='" + Convert.ToString(txt6.Password) + "'", bag);
+            MySqlDataReader dr = girisyap.ExecuteReader();
+          
+            MessageBox.Show("Hoş geldiniz (Devam Etmek İçin Tamam'a Tıklayınız.)");
+          
+            
+            if (dr.Read())
+                
+
+            {
+                
+                NavigationService.Navigate(new Uri("/resimler.xaml", UriKind.Relative));
+            }
+            else
+            {
+                MessageBox.Show("Nick veya Şifre yanlış");
+            }
+          
+            
         }
     }
 }

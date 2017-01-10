@@ -21,7 +21,7 @@
         <TextBox Name="txt5" Grid.Column="1" Margin="4" Grid.Row="0"></TextBox>
         <Label Grid.Column="0" Grid.Row="0" Background="Beige">NİCK  :</Label>
         
-        <TextBox Name="txt6"  Grid.Column="1" Margin="4" Grid.Row="1"></TextBox>
+        <PasswordBox Name="txt6"  Grid.Column="1" Margin="4" Grid.Row="1"></PasswordBox>
         <Label Grid.Column="0" Grid.Row="1" Background="Beige">ŞİFRE  :</Label>
 
         <Button Name="btn2" Margin="20" Width="150" Grid.Column="1" Grid.Row="2" FontWeight="Bold" BorderBrush="Green" BorderThickness="2" Click="btn2_Click">GİRİŞ YAP</Button>
