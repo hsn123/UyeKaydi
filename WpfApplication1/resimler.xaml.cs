@@ -44,5 +44,10 @@ namespace WpfApplication1
             }
            
         }
+
+        private void sil_Click(object sender, RoutedEventArgs e)
+        {
+            lst1.Items.Clear();
+        }
     }
 }
