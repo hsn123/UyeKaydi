@@ -24,19 +24,14 @@ namespace WpfApplication1
         }
         public void kullaniciekle(string ad, string soyad, string nick, int sifre)
         {
-            MySqlCommand komut = new MySqlCommand("INSERT INTO uyekaydi (ad,soyad,nick,sifre) VALUES ('" + ad + "','" + soyad + "','" + nick + "','" + sifre + "')", baglanti);
+            MySqlCommand komut = new MySqlCommand("INSERT INTO uyekaydi (ad,soyad,nick,sifre) VALUES ('" + ad + "','" + soyad + "','" + nick + "','"+sifre+"')", baglanti);
             komut.ExecuteNonQuery();
             komut.Dispose();
         }
-        public void kullaniciSil(int id)
+
+        public VeriTabani(string ipadres, string portno,string nick,string sifre,string veritabaniismi)
         {
-            MySqlCommand komut = new MySqlCommand("DELETE FROM uyekaydi WHERE id=" + id.ToString(), baglanti);
-            komut.ExecuteNonQuery();
-            komut.Dispose();
-        }
-        public VeriTabani(string ipadres, string portno,string nick,string sifre,string veritabaniadi)
-        {
-            baglanti=new MySqlConnection("Server="+ipadres+";Potr="+portno+";Database="+veritabaniadi+";Uid="+nick+";Pwd="+sifre+");
+            baglanti = new MySqlConnection("Server=" + ipadres + ";Potr=" + portno + ";Database=" + veritabaniismi + ";Uid=" + nick + ";Pwd="+sifre+";");
             try
             {
                 baglanti.Open();
@@ -45,6 +40,16 @@ namespace WpfApplication1
             {
                 hata = e.Message;
             }
+        }
+
+        internal void kullaniciekle(string text1, string text2, string text3, string text4)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void kullaniciekle(string text1, string text2, string text3)
+        {
+            throw new NotImplementedException();
         }
     }
 }

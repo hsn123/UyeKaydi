@@ -24,10 +24,15 @@ namespace WpfApplication1
     {
         VeriTabani veri = new VeriTabani("192.168.1.1", "3306", "Hasan", "hsn", "uyekaydi");
         public MainWindow anaEkran;
+        private string ad;
+        private string soyad;
+        private string nick;
+        private string sifre;
+        private MySqlConnection baglanti;
+
         public kayit()
         {
             InitializeComponent();
-            dg1.ItemsSource = "";
         }
 
         private void btn1_Click(object sender, RoutedEventArgs e)
@@ -35,5 +40,12 @@ namespace WpfApplication1
             anaEkran.ekran.Navigate(new giris());
         }
 
+        private void btn2_Click(object sender, RoutedEventArgs e)
+        {
+            veri.kullaniciekle(txt1.Text, txt2.Text, txt3.Text,txt4.Text);
+            MySqlCommand komut = new MySqlCommand("INSERT INTO uyekaydi (ad,soyad,nick,sifre) VALUES ('" + ad + "','" + soyad + "','" + nick + "','"+sifre+"')", baglanti);
+            komut.ExecuteNonQuery();
+            komut.Dispose();
+        }
     }
 }
