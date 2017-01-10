@@ -14,3 +14,6 @@ C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\kayi
 C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\kayit.g.cs
 C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\giris.baml
 C:\Users\Azerbaycan\Desktop\Hasan\WpfApplication1\WpfApplication1\obj\Debug\giris.g.cs
+C:\Users\hasan\Desktop\UyeKaydi\UyeKaydi\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+C:\Users\hasan\Desktop\UyeKaydi\UyeKaydi\WpfApplication1\obj\Debug\WpfApplication1.exe
+C:\Users\hasan\Desktop\UyeKaydi\UyeKaydi\WpfApplication1\obj\Debug\WpfApplication1.pdb
