@@ -23,29 +23,28 @@ namespace WpfApplication1
     public partial class kayit : Page
     {
         VeriTabani veri = new VeriTabani("192.168.1.1", "3306", "Hasan", "hsn", "uyekaydi");
-        public MainWindow anaEkran;
-        private string ad;
-        private string soyad;
-        private string nick;
-        private string sifre;
-        private MySqlConnection baglanti;
+        
+         MySqlConnection baglanti;
 
+        public MainWindow anaEkran;
         public kayit()
         {
             InitializeComponent();
         }
 
-        private void btn1_Click(object sender, RoutedEventArgs e)
-        {
-            anaEkran.ekran.Navigate(new giris());
-        }
-
         private void btn2_Click(object sender, RoutedEventArgs e)
         {
-            veri.kullaniciekle(txt1.Text, txt2.Text, txt3.Text,txt4.Text);
-            MySqlCommand komut = new MySqlCommand("INSERT INTO uyekaydi (ad,soyad,nick,sifre) VALUES ('" + ad + "','" + soyad + "','" + nick + "','"+sifre+"')", baglanti);
-            komut.ExecuteNonQuery();
-            komut.Dispose();
+            NavigationService.Navigate(new Uri("/giris.xaml", UriKind.Relative));
+            // veri.kullaniciekle(txt1.Text,txt2.Text,txt3.Text,txt4.Text);
+           // MySqlCommand komut = new MySqlCommand("INSERT INTO uyekaydi (ad,soyad,nick,sifre) VALUES ('" + txt1.Text + "','" + txt2.Text + "','" + txt3.Text + "','" + txt4.Text + "')",baglanti );
+            //komut.ExecuteNonQuery();
+           // komut.Dispose();
+            
+        }
+
+        private void btn1_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/giris.xaml", UriKind.Relative));
         }
     }
 }

@@ -20,9 +20,15 @@ namespace WpfApplication1
     /// </summary>
     public partial class giris : Page
     {
+        
         public giris()
         {
             InitializeComponent();
+        }
+
+        private void btn2_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/resimler.xaml", UriKind.Relative));
         }
     }
 }

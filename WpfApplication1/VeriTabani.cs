@@ -29,9 +29,14 @@ namespace WpfApplication1
             komut.Dispose();
         }
 
-        public VeriTabani(string ipadres, string portno,string nick,string sifre,string veritabaniismi)
+        internal void kullaniciekle(string text1, string text2, string text3, string text4)
         {
-            baglanti = new MySqlConnection("Server=" + ipadres + ";Potr=" + portno + ";Database=" + veritabaniismi + ";Uid=" + nick + ";Pwd="+sifre+";");
+            throw new NotImplementedException();
+        }
+
+        public VeriTabani(string ipadres, string portno,string nick,string sifre,string uyekaydi)
+        {
+            MySqlConnection baglanti = new MySqlConnection("Server=localhost;Database=uyekaydi;Uid=root;Pwd=;Convert Zero Datetime=True;Allow Zero Datetime=True;");
             try
             {
                 baglanti.Open();
@@ -40,16 +45,6 @@ namespace WpfApplication1
             {
                 hata = e.Message;
             }
-        }
-
-        internal void kullaniciekle(string text1, string text2, string text3, string text4)
-        {
-            throw new NotImplementedException();
-        }
-
-        internal void kullaniciekle(string text1, string text2, string text3)
-        {
-            throw new NotImplementedException();
         }
     }
 }

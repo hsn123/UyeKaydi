@@ -12,21 +12,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
-using System.Data.SqlClient;
 
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for resimler.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class resimler : Page
     {
-        public MainWindow()
+       
+
+        public resimler()
         {
             InitializeComponent();
-            ekran.Navigate(new kayit { anaEkran = this });
-            
 
         }
     }
