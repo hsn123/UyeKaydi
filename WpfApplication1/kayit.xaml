@@ -20,15 +20,16 @@
             <ColumnDefinition Width="auto"></ColumnDefinition>
             <ColumnDefinition Width="auto"></ColumnDefinition>         
         </Grid.ColumnDefinitions> 
+        <DataGrid Name="dg1"/>
         <Label Name="lbl1" Grid.Column="0" Grid.Row="1" Margin="10" Background="Beige">AD :</Label>
         <Label Name="lbl2" Grid.Column="0" Grid.Row="2" Margin="10" Background="Beige">SOYAD :</Label>
         <Label Name="lbl3" Grid.Column="0" Grid.Row="3" Margin="10" Background="Beige">NİCK  :</Label>
         <Label Name="lbl4" Grid.Column="0" Grid.Row="4" Margin="10" Background="Beige">ŞİFRE :</Label>
         <Button Name="btn1" Grid.Column="1" Grid.Row="0" Margin="12" FontWeight="Bold" BorderBrush="red" BorderThickness="2" Width="75" Click="btn1_Click">GİRİŞ</Button>
-        <Button Name="btn2" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="10" Width="150" FontWeight="Bold" BorderBrush="Blue" BorderThickness="2">KAYDOL</Button>
+        <Button Name="btn2" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Margin="10" Width="150" FontWeight="Bold" BorderBrush="Blue" BorderThickness="2" Click="btn2_Click">KAYDOL</Button>
         <TextBox Name="txt1" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="1" Margin="10"></TextBox>
         <TextBox Name="txt2" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" Margin="10"></TextBox>
         <TextBox Name="txt3" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="3" Margin="10"></TextBox>
-        <TextBox Name="txt4" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Margin="10"></TextBox>
+        <TextBox Name="txt10" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" Margin="10"></TextBox>
     </Grid>
 </Page>

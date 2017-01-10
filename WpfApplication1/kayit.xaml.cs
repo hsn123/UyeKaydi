@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
+using MySql.Data.MySqlClient;
 
 namespace WpfApplication1
 {
@@ -20,15 +22,18 @@ namespace WpfApplication1
     /// </summary>
     public partial class kayit : Page
     {
+        VeriTabani veri = new VeriTabani("192.168.1.1", "3306", "Hasan", "hsn", "uyekaydi");
         public MainWindow anaEkran;
         public kayit()
         {
             InitializeComponent();
+            dg1.ItemsSource = "";
         }
 
         private void btn1_Click(object sender, RoutedEventArgs e)
         {
             anaEkran.ekran.Navigate(new giris());
         }
+
     }
 }
