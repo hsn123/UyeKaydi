@@ -47,7 +47,9 @@ namespace WpfApplication1
 
         private void sil_Click(object sender, RoutedEventArgs e)
         {
-            lst1.Items.Clear();
+            lst1.Items.Remove(lst1.SelectedItem);
+          
+           
         }
     }
 }
